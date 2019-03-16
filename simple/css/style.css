@@ -72,10 +72,6 @@ header:after{
     line-height: 24px;
 }
 .about-product-video{
-    background-color: #445161;
-    width: 430px;
-    height: 245px;
-    overflow: hidden;
     float: right;
 }
 /**-------------------pluses-product------------**/
