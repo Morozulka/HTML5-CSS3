@@ -144,6 +144,9 @@ header:after{
     float: left;
     margin-right: 10px;
 }
+.screenshots-write{
+    overflow: hidden;
+}
 .screenshots-write-name{
     color: #445161;
     font-size: 24px;
@@ -301,7 +304,7 @@ header:after{
 footer{
     width: 100%;
     background: #445162;
-    padding: 50px;
+    padding-top: 50px;
     box-sizing: border-box;
 }
 footer:after{
@@ -309,12 +312,113 @@ footer:after{
     display: block;
     clear: both;
 }
+.footer-name{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+}
+.contacts-form{
+    width: 500px;
+}
+.contacts-form-input{
+    display: block;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 21px;
+}
+.contacts-form-text{
+    display: block;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 170px;
+    margin-bottom: 21px;
+    resize: none;
+}
+.contacts-form-button{
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+.contacts-form-button:hover{
+    background: #ccc;
+}
+.contacts-form-button:active{
+    background: #fff;
+}
+.contacts-text{
+    margin-left: 45px;
+}
+.contacts-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.contacts-list li{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 29px;
+}
+.contacts-list-skype:before{
+    content: '\e802';
+    font-family: "fontello";
+    font-size: 26px;
+    padding-right: 5px;
+}
+.contacts-list-isq:before{
+    content: '\f304';
+    font-family: "fontello";
+    font-size: 26px;
+    padding-right: 5px;
+}
+.contacts-list-mail:before{
+    content: '\e800';
+    font-family: "fontello";
+    font-size: 26px;
+    padding-right: 5px;
+}
+.contacts-list-phone:before{
+    content: '\e801';
+    font-family: "fontello";
+    font-size: 26px;
+    padding-right: 5px;
+}
 
-
-
-
-
-
-
-
-
+.contacts-icon{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background: #fff;
+    text-align: center;
+    line-height: 42px;
+    font-size: 22px;
+    color: #445162;
+}
+.footer-copyright{
+    background: #f5f5f5;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    text-align: center;
+}
