@@ -231,32 +231,35 @@ header:after{
     background: #fff;
     padding: 50px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 .buy:after{
     content: "";
     display: block;
     clear: both;
 }
-.buy-section{
-    margin-top: 29px;
-   display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
 .buy-name{
+    width: 100%;
     margin: 0;
+    margin-bottom: 30px;
     color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
 }
+.buy-block:nth-child(2),
+.buy-block:nth-child(3){
+    margin-right: 45px;
+}
 .buy-block{
     width: 300px;
     background: #425062;
     border-radius: 7px;
     text-align: center;
-    margin-right: 45px;
 }
 .buy-block-name{
     margin: 0;
@@ -282,13 +285,19 @@ header:after{
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    padding: 0;
+    margin: 20px;
+    list-style-position: inside;
 }
 .buy-block-button{
     border-radius: 5px;
+    border: none;
+    outline: none;
     background: #ffffff;
     width: 260px;
-    height: 40px;
+    padding: 14px;
     color: #445161;
+    text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
@@ -298,7 +307,8 @@ header:after{
     background: #ccc;
 }
 .buy-block-button:active{
-    background: #ffffff;
+    background: #445162;
+    color: #fff;
 }
 /**-------------------footer----------------**/    
 footer{
@@ -306,6 +316,9 @@ footer{
     background: #445162;
     padding-top: 50px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 footer:after{
     content: "";
@@ -313,44 +326,57 @@ footer:after{
     clear: both;
 }
 .footer-name{
+    width: 100%;
     color: #ffffff;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
 }
-.contacts{
-    display: flex;
-    justify-content: center;
-}
 .contacts-form{
     width: 500px;
+    margin-right: 45px;
 }
 .contacts-form-input{
     display: block;
     border-radius: 5px;
+    border: none;
+    outline: none;
     background-color: #ffffff;
-    width: 500px;
+    width: 100%;
     height: 40px;
+    box-sizing: border-box;
+    padding-left: 5px;
     margin-bottom: 21px;
 }
 .contacts-form-text{
     display: block;
     border-radius: 5px;
+    border: none;
+    outline: none;
     background-color: #ffffff;
-    width: 500px;
+    width: 100%;
     height: 170px;
+    box-sizing: border-box;
+    padding-left: 5px;
     margin-bottom: 21px;
     resize: none;
+}
+.contacts-form-input:hover,
+.contacts-form-text:hover{
+    background: #ccc;    
 }
 .contacts-form-button{
     display: block;
     margin: 0 auto;
     border-radius: 5px;
+    border: none;
+    outline: none;
     background-color: #ffffff;
     width: 140px;
-    height: 40px;
+    padding: 10px;
     color: #445162;
+    text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -360,10 +386,11 @@ footer:after{
     background: #ccc;
 }
 .contacts-form-button:active{
-    background: #fff;
+    background: #445162;
+    color: #fff;
 }
 .contacts-text{
-    margin-left: 45px;
+    width: 300px;
 }
 .contacts-list{
     list-style-type: none;
@@ -404,6 +431,7 @@ footer:after{
 
 .contacts-icon{
     display: inline-block;
+    text-decoration: none;
     width: 42px;
     height: 42px;
     border-radius: 21px;
@@ -414,6 +442,7 @@ footer:after{
     color: #445162;
 }
 .footer-copyright{
+    width: 100%;
     background: #f5f5f5;
     color: #445162;
     font-size: 12px;
@@ -421,4 +450,5 @@ footer:after{
     letter-spacing: 0.3px;
     line-height: 24px;
     text-align: center;
+    margin: 50px 0 0 0;
 }
